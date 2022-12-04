@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+body {
+    color: black;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+}
+
+.column {
+  float: left;
+  width: 20%;   
+  padding: 10px 10px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.664);
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+  background-color: white;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-decoration: none;
+    margin: 0px 4px;
+    color: #fff;
+    background-color: rgb(28, 66, 66);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+img {
+    
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <h1>Hello World, bem vindos ao meu site de testes!!</h1>
+    <p style="text-align: center;">Todos os dados estão sendo compilados em assemply x86. Porque? sei la achei legal usar algo diferente</p>
+    <div class="column">
+        <div class="card">
+          <img src="https://br.vuejs.org/images/logo.png" alt="Girl in a jacket" width="150" height="150">
+          <h3>Vue JS</h3>
+          <p>Vue.js é um framework JavaScript de código-aberto, focado no desenvolvimento de interfaces de usuário e aplicativos de página única.</p>
+          <a href="/vue">View</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG11cxPAGsF3l-HavKazcrKleHrEkOPrByC421vypn-g&s" alt="Girl in a jacket" width="150" height="150">
+          <h3>AngularJS</h3>
+          <p>AngularJS é um framework JavaScript código aberto, mantido pelo Google, que auxilia na execução de single-page applications.</p>
+          <a href="/angular">View</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="data:image/png;base64,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" alt="Girl in a jacket" width="150" height="150">
+          <h3>EJS</h3>
+          <p>EJS é uma linguagem de modelagem simples que permite gerar marcação HTML com JavaScript simples.</p>
+          <a href="/ejs">View</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="data:image/png;base64,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" alt="Girl in a jacket" width="150" height="150">
+          <h3>React</h3>
+          <p>O React é uma biblioteca front-end JavaScript de código aberto com foco em criar interfaces de usuário em páginas web.</p>
+          <a href="/react">View</a>
+        </div>
+      </div>
+</body>
+</html>
